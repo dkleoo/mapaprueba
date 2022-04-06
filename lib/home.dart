@@ -44,7 +44,7 @@ class _homeState extends State<home> {
     return BlocBuilder<LocationUserBloc, LocationUserState>(
       builder: (context, state) {
 
-        if(state.newLocation == null ) return const Center(child: Text("Espere porfavor"));
+        if(state.newLocation == null) return Text("Espere por favor");
 
         lat = state.newLocation!.latitude;
         log = state.newLocation!.longitude;
